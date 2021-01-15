@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir2";
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir3";
+  src: url(../fonts/AvenirNextLTPro-It.otf);
+  font-weight: 100;
+}
+
+.credits {
+  font-family: system-ui;
+  background: #212429;
+  font-size: 11px;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.credits a {
+  color: #f865b0;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Avenir;
+  padding-bottom: 108px;
+}
+
+.video {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  padding: 15px 15px 100px;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    rgba(0, 0, 0, 0.5) 85%,
+    transparent 100%
+  );
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  padding: 1em 0 0;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  color: gray;
+  padding-bottom: 1em;
+}
+.tabs a {
+  color: gray;
+  text-decoration: none;
+}
+
+.tab {
+  text-align: center;
+  font-size: 0.9em;
+}
+.tab svg {
+  display: block;
+  margin: auto;
+}
+
+.tab:hover path {
+  fill: seashell;
+  color: white;
+}
+
+.title {
+  /* border: 1px solid white; */
+  padding: 10px;
+}
+
+.tag {
+  /* border: 1px solid white; */
+  display: flex;
+  padding-right: -10px;
+}
+
+.tags {
+  display: flex;
+  /* justify-content: center; */
+  gap: 100px;
+  list-style: none;
+  padding: 10px;
+}
+
+h2 {
+  color: green;
+}
+
+.featured-actions {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2em;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  font-size: 1.1em;
+  width: 30%;
+  cursor: pointer;
+  border: none;
+}
+
+.button::before {
+  content: " ";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.button-secondary {
+  background-color: #212429;
+  color: white;
+  font-size: 1.1em;
+  width: 30%;
+  cursor: pointer;
+  border: none;
+}
+
+.button-secondary::before {
+  content: "";
+  display: block;
+  /* border: 1px solid red; */
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.icon-play::before {
+  background: url(../images/icons/play.svg);
+}
+
+.icon-download::before {
+  background: url(../images/icons/dowload.svg);
+}
+
+article {
+  font-family: Avenir2;
+  padding: 10px;
+}
+
+p {
+  font-family: Avenir3;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.featured-actions2 {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+.buton-secondary {
+  background: none;
+  color: white;
+  font-size: 1.1em;
+  min-width: 100px;
+  cursor: pointer;
+  border: none;
+}
+
+.buton-secondary::before {
+  content: "";
+  display: block;
+  /* border: 1px solid red; */
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.icon-plus::before {
+  background: url(../images/icons/plus.svg);
+}
+.icon-like::before {
+  background: url(../images/icons/like.svg);
+}
+.icon-send::before {
+  background: url(../images/icons/email-send.svg);
+}
+
+.list-content {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.list-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.list-item:first-child {
+  margin: 0;
+}
+
+.list {
+  padding: 0 1em;
+}
+.list-title {
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
